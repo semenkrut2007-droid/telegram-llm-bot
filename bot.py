@@ -15,10 +15,7 @@ load_dotenv()
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Конфигурация из переменных окружения
-TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
-OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
-PROXY_URL = os.getenv("PROXY_URL")
+
 
 # Настройка клиента OpenRouter для доступа к LLM
 client = OpenAI(
